@@ -21,7 +21,7 @@ body {
   max-width: 500px;
   margin: auto;
   text-align: center;
-  padding-top: 50px;
+  padding: 50px 25px 25px;
 }
 .title {
   margin-bottom: 25px;
@@ -77,4 +77,18 @@ button:hover {
 .download-btn:hover {
   background-color: #161A33;
   color: #7DE2D1;
+}
+@media only screen and (max-width: 540px) {
+  .flex {
+    flex-direction: column;
+  }
+  input {
+    max-width: 100%;
+    width: auto;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  button {
+    border-radius: 5px;
+  }
 }

@@ -8,7 +8,6 @@ function App() {
     QRCode.toDataURL(url, {width: 500, margin: 2, type: "svg"} , (err, url) => {
       if( err ) return console.error(err);
 
-      console.log(url)
       setQrcode(url)
     })
   }
@@ -22,11 +21,10 @@ function App() {
         </div>
         {qrcode && 
           <div className='qrcode-wrapper'>
-          <img src={qrcode}/>
+          <img src={qrcode} alt="qr-img"/>
           <a className="download-btn" href={qrcode} download="qrcode-png">Download</a>
         </div>
         }
-        
     </div>
   );
 }
